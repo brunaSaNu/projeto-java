@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import produto.model.Produto;
+import produto.model.ProdutoNoEcommerce;
 
 public class Menu {
 
@@ -35,7 +36,7 @@ public class Menu {
 				System.out.println("Agora digite o preço pelo qual quer o vender:");
 				float precoProduto = scan.nextFloat();
 				
-				listaProdutos.add(new Produto(nomeProduto, precoProduto));
+				listaProdutos.add(new ProdutoNoEcommerce(nomeProduto, precoProduto));
 				
 				System.out.println("\n***Produto anunciado com sucesso!***\n");
 			}
